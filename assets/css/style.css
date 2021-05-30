@@ -1,7 +1,7 @@
 :root {
     --backcolor: #EBE70D;
-    --textcolor: #ceb442;
-    --selectedtext: #5e521f;
+    --textcolor: #83722a;
+    --selectedtext: #221e0c;
 }
 
 header {
@@ -178,8 +178,13 @@ header a:hover , #contact-flexbox a:hover{
         padding: 2rem;
     }
 
+    #sceneimage {
+        display: flex;
+        justify-content: center;
+    }
+    
     #sceneimage img{
-        margin: 0px auto;
+        margin-left: 0px;
     }
 
     #aboutme , #work , #contacts {
