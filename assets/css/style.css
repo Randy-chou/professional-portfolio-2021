@@ -81,11 +81,13 @@ main {
     border-right: 5px solid var(--textcolor);
 }
 
-.row section{
+.row .content{
     min-height: 100%;
     flex: 3;
     padding: 2em;
 }
+
+/* Aboutme Section */
 
 #aboutme p {
     color: var(--textcolor);
@@ -94,32 +96,63 @@ main {
     font-weight: lighter;
 }
 
+/* Work Section */
+
 #work-flexbox{
+    min-height: 100%;
+    flex: 3;
+    padding: 2em;
     display: flex;
     flex-wrap: wrap;
 }
 
 #primary-card{
     flex: 1 0 100%;
-    padding: 3px;
+    padding: 15px;
+    margin: 3px;
+    background-color: var(--backcolor);
     position: relative;
 }
 
 .card{
-    flex: 1 0 50%;
-    padding: 3px;
+    flex: 1 0 45%;
+    padding: 15px;
+    margin: 3px;
+    background-color: var(--backcolor);
     position: relative;
 }
 
+.img-frame {
+    position: relative;
+    width: 100%;
+}
+
+.inshadow{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    z-index: 2;
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.9);
+}
+
+#primary-card .inshadow{
+    height: 300px;
+}
+
 #work-flexbox img {
-    background-color: var(--backcolor);
-    padding: 15px;
     object-fit: none;
     height: 200px;
     width: 100%;
 }
 
+#primary-card img{
+    height: 300px;
+}
+
+/* Card Tag */
+
 .card-tag {
+    z-index: 3;
     position: absolute;
     bottom: 24%;
     padding: 10px;
@@ -136,9 +169,7 @@ main {
     font-size: 15px;
 }
 
-#primary-card img{
-    height: 300px;
-}
+/* Contact Section */
 
 #contact-flexbox {
     display: flex;
