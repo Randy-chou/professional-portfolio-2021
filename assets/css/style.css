@@ -1,8 +1,24 @@
+/* Index
+1- variables
+2- header
+3- image between header and main
+4- formatting sections of the page
+5- about me secition
+6- work
+7- card tag
+8- contact section
+9- interactive functions
+10- mobile style reformatting
+*/
+
+/* variables */
 :root {
     --backcolor: #EBE70D;
     --textcolor: #83722a;
     --selectedtext: #221e0c;
 }
+
+/* Header */
 
 header {
     background-color: var(--backcolor);
@@ -37,6 +53,8 @@ header ul li a{
     font-weight: bold;
 }
 
+/* Image between header and main */
+
 #sceneimage {
     height: 400px;
     width: 100%;
@@ -52,6 +70,8 @@ header ul li a{
     height: 250px;
     padding: 15px
 }
+
+/* Formatting sections of the page */
 
 main {
     display: flex;
