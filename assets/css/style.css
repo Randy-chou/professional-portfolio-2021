@@ -185,7 +185,7 @@ main {
     font-size: 20px;
 }
 
-.card-tag h4 {
+.card-tag a {
     font-size: 15px;
 }
 
@@ -206,7 +206,7 @@ main {
 
 /* Interactive functions */
 
-#work figure:hover{
+#work .img-frame:hover{
     filter: brightness(60%);
 }
 
